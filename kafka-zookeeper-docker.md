@@ -8,13 +8,28 @@ docker rm $(docker ps -a -q)
 # Run Kafka and Zookeeper with docker
 
 ## 1. Run zookeeper
-docker run -d --name zookeeper -p 2181:2181 jplock/zookeeper
+docker run -d \
+--name zookeeper \
+-p 2181:2181 \
+jplock/zookeeper
 
 ## 2. Run kafka
-docker run -d --name kafka -p 7203:7203 -p 9092:9092 -e KAFKA_ADVERTISED_HOST_NAME=10.4.1.29 -e ZOOKEEPER_IP=10.4.1.29 ches/kafka
+docker run -d \
+--name kafka \
+-p 7203:7203 \
+-p 9092:9092 \
+-e KAFKA_ADVERTISED_HOST_NAME=10.4.1.29 \
+-e ZOOKEEPER_IP=10.4.1.29 \
+ches/kafka
 
 ## 3. Create topic
-docker run --rm ches/kafka kafka-topics.sh --create --topic senz --replication-factor 1 --partitions 1 --zookeeper 10.4.1.29:2181
+docker run \
+--rm ches/kafka kafka-topics.sh \
+--create \
+--topic senz \
+--replication-factor 1 \
+--partitions 1 \
+--zookeeper 10.4.1.29:2181
 
 ## 4. List topics
 docker run \
