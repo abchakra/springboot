@@ -36,7 +36,7 @@ ches/kafka kafka-console-consumer.sh \
 --zookeeper 10.4.1.29:2181
 
 
-#Kafka related data in Zookeeper
+# Kafka related data in Zookeeper
 ## 1. Go inside Zookeeper container
 docker exec -it zookeeper bash
 ## 2. Connect to Zookeeper server
