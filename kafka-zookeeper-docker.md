@@ -1,8 +1,11 @@
 https://medium.com/@itseranga/kafka-and-zookeeper-with-docker-65cff2c2c34f
 
-
+## Docker commands
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
+
+## Important
+modify the KAFKA_ADVERTISED_HOST_NAME to match your docker host IP (Note: Do not use localhost or 127.0.0.1 as the host ip if you want to run multiple brokers.)
 
 
 # Run Kafka and Zookeeper with docker
