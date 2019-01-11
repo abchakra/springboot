@@ -27,4 +27,7 @@ public class ForexController {
 
 		return exchangeValue;
 	}
+
+
+	// https://www.freeforexapi.com/api/live
 }
