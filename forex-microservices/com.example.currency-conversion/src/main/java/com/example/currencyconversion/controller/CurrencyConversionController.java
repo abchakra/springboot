@@ -53,4 +53,15 @@ public class CurrencyConversionController {
 				quantity.multiply(response.getConversionMultiple()), response.getPort());
 	}
 
+	@GetMapping("/currency-converter-feign/{CODE}/quantity/{quantity}")
+	public CurrencyConversionBean convertCurrencyFeign2(@PathVariable String CODE, @PathVariable BigDecimal quantity) {
+
+		CurrencyConversionBean response = proxy.retrieveExchangeValueWithCode(CODE);
+
+		logger.info("{}", response);
+
+		return new CurrencyConversionBean(response.getId(), CODE, response.getConversionMultiple(), quantity,
+				quantity.multiply(response.getConversionMultiple()), response.getPort());
+	}
+
 }
