@@ -1,0 +1,9 @@
+com\tomekl007\packt\destinations\api\DestinationDetailsControllerTest.class
+com\tomekl007\packt\controllers\ReactiveTravelRepositoryLiveTest$1.class
+com\tomekl007\packt\booking\api\MVCControllerTest.class
+com\tomekl007\packt\controllers\ReactiveTravelRepositoryLiveTest.class
+com\tomekl007\packt\booking\api\security\MVCControllerSecurityTest.class
+com\tomekl007\packt\repository\TravelRepositoryIntegrationTest.class
+com\tomekl007\packt\BookingServiceIntegrationTest.class
+com\tomekl007\packt\mock\TravelDestinationDetailsMock.class
+com\tomekl007\packt\reactive\ReactorTest.class

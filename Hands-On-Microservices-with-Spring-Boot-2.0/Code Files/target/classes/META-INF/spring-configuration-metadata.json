@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "travel-config",
+      "type": "com.tomekl007.packt.booking.infrastructure.configuration.BookingServiceSettings",
+      "sourceType": "com.tomekl007.packt.booking.infrastructure.configuration.BookingServiceSettings"
+    }
+  ],
+  "properties": [
+    {
+      "name": "travel-config.supported-destinations",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.tomekl007.packt.booking.infrastructure.configuration.BookingServiceSettings"
+    }
+  ],
+  "hints": []
+}
