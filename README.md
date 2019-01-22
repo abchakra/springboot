@@ -22,3 +22,6 @@ docker container exec -it mongo mongo
 ## Find Details eg IP
 docker inspect mongo
 
+## Add user
+db.createUser( { user: "micro", pwd: "micro", roles: ["readWrite"] })
+
