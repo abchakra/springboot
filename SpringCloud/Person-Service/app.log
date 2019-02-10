@@ -1,0 +1,54 @@
+21:51:21.215 [main] INFO  c.s.e.p.s.P.PersonServiceApplication - Starting PersonServiceApplication on DESKTOP-SA1ILFC with PID 17492 (C:\Users\achak\silexica_files\springboot\SpringCloud\Person-Service\out\production\classes started by achak in C:\Users\achak\silexica_files\springboot\SpringCloud\Person-Service)
+21:51:21.220 [main] INFO  c.s.e.p.s.P.PersonServiceApplication - No active profile set, falling back to default profiles: default
+21:51:22.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:51:22.670 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+21:51:23.308 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f865891] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:51:23.342 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9f06a5c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:51:24.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2222 (http)
+21:51:24.310 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:51:24.311 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+21:51:24.329 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\apache-maven-3.5.4\bin;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\achak\AppData\Local\Microsoft\WindowsApps;;C:\Users\achak\AppData\Local\Programs\Microsoft VS Code\bin;.]
+21:51:24.622 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:51:24.622 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+21:51:24.623 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3322 ms
+21:51:24.962 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:51:25.187 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:51:25.329 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21:51:25.445 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.0.Final}
+21:51:25.447 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:51:25.696 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+21:51:25.862 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+21:51:26.214 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6ac4c3f7'
+21:51:26.216 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+21:51:26.219 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:51:26.962 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+21:51:27.213 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21:51:27.243 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+21:51:27.301 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:51:27.351 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+21:51:27.380 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+21:51:27.396 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+21:51:27.912 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2222 (http) with context path ''
+21:51:27.918 [main] INFO  c.s.e.p.s.P.PersonServiceApplication - Started PersonServiceApplication in 7.632 seconds (JVM running for 9.435)
+21:51:56.673 [http-nio-2222-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:51:56.674 [http-nio-2222-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21:51:56.674 [http-nio-2222-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+21:51:56.708 [http-nio-2222-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+21:51:56.711 [http-nio-2222-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
+21:51:56.751 [http-nio-2222-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+21:51:56.948 [http-nio-2222-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/hal+json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [application/hal+json]
+21:51:57.019 [http-nio-2222-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [links: [<http://localhost:2222/profile>;rel="profile"]]
+21:51:57.079 [http-nio-2222-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21:51:57.616 [http-nio-2222-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+21:51:57.618 [http-nio-2222-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+21:51:57.641 [http-nio-2222-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21:52:17.994 [http-nio-2222-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+21:52:17.999 [http-nio-2222-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/hal+json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [application/hal+json]
+21:52:18.000 [http-nio-2222-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [links: [<http://localhost:2222/profile>;rel="profile"]]
+21:52:18.002 [http-nio-2222-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+21:57:00.710 [http-nio-2222-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+21:57:00.714 [http-nio-2222-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+21:57:00.715 [http-nio-2222-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [links: [<http://localhost:2222/profile>;rel="profile"]]
+21:57:00.719 [http-nio-2222-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
