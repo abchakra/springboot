@@ -1,0 +1,21 @@
+version: "3"
+services:
+  mongodb:
+#    image: mongo:3.2.4
+    image: mongo
+    container_name: "springboot-mongo"
+    ports:
+    - 27017:27017
+    volumes:
+      - $HOME/data/springboot-mongo-data:/data/db
+      - $HOME/data/springboot-mongo-bkp:/data/bkp
+    restart: always
+  springboot:
+    build: .
+#    image: petstore/article-service
+    restart: always
+    container_name: article-service
+    ports:
+    - 8080:8080
+    depends_on:
+    - mongodb
