@@ -1,6 +1,6 @@
   server:
         port : 8083
-        
   spring:
-      application:
-        name: ratings-data-service
+      profiles:
+        active: dev
+

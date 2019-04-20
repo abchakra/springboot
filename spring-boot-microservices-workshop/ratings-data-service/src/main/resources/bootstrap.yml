@@ -1,0 +1,13 @@
+  spring:
+      application:
+        name: ratings-data-service
+      cloud:
+        config:
+             uri: http://cloud-config
+#                  fail-fast: true 
+#          uri: http://localhost:8888
+#          username: root
+#          password: s3cr3t
+            
+        
+
