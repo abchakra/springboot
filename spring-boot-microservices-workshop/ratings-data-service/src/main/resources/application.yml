@@ -3,4 +3,4 @@
         
   spring:
       application:
-        name: rating-data-service
+        name: ratings-data-service
