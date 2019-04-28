@@ -1,12 +1,17 @@
-  spring:
-      application:
-        name: movie-catalog-service
+   spring:
+      profiles:
+        active: dev
       cloud:
         config:
-           uri: http://cloud-config
-#          uri: http://localhost:8888
+           discovery:
+                enabled: true
+                service-id: cloud-config
+           name: catalog
+#           uri: http://localhost:8888
 #          username: root
 #          password: s3cr3t
            fail-fast: true 
+           
+           
         
 

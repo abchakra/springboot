@@ -1,15 +1,21 @@
   server:
         port : 8888 
+        
   spring:
+      profiles:
+        active: dev
       cloud:
           config:
+              discovery:
+                enabled: true
               server:
                 git:
                   #uri: ssh://localhost/config-repo
-                  uri: file:///${user.home}/app-config-repo
-                  clone-on-start: true
-                      #username: arnav 
-                      #password: sweety 
+#                  uri: file:///${user.home}/app-config-repo
+                  uri: https://github.com/abchakra/spring-cloud-config-store
+#                  clone-on-start: true
+                  search-paths:
+                  - '*service'
                       #force-pull: true 
 
 

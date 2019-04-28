@@ -22,9 +22,6 @@ public class MovieCatalogController {
 
 	@RequestMapping("/{userId}")
 	public List<CatalogItem> getMovieCatalog(@PathVariable("userId") String userID) {
-//		return Collections.+(new CatalogItem("Titanic", "Drowning ship with stupid rich people", 4));
-//		List<Rating> ratingsList = Arrays.asList(new Rating("1234", 3), new Rating("5678", 4));
-
 		UserRating userRating = restTemplate.getForObject("http://ratings-data-service/ratings/users/" + userID,
 				UserRating.class);
 
